@@ -1,0 +1,65 @@
+# Jardem.ai — the whole platform as one cluster.
+#   docker compose up --build        → http://localhost:8080
+name: jardem
+
+services:
+  db:
+    image: postgis/postgis:16-3.4-alpine
+    platform: linux/amd64
+    environment:
+      POSTGRES_DB: jardem
+      POSTGRES_USER: jardem
+      POSTGRES_PASSWORD: ${JARDEM_DB_PASSWORD:-jardem-local}
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U jardem -d jardem"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    networks: [cluster]
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    networks: [cluster]
+
+  backend:
+    build: ./backend
+    environment:
+      JARDEM_DATABASE_URL: postgresql://jardem:${JARDEM_DB_PASSWORD:-jardem-local}@db:5432/jardem
+      JARDEM_REDIS_URL: redis://redis:6379/0
+      JARDEM_JWT_SECRET: ${JARDEM_JWT_SECRET:-local-demo-secret-change-me-before-any-pilot}
+      JARDEM_DEMO_PIN: ${JARDEM_DEMO_PIN:-1234}
+      JARDEM_SIM_SPEED: ${JARDEM_SIM_SPEED:-3}
+      JARDEM_AMBIENT_CALLS_PER_HOUR: ${JARDEM_AMBIENT_CALLS_PER_HOUR:-40}
+      JARDEM_AMBIENT_HOTSPOTS: ${JARDEM_AMBIENT_HOTSPOTS:-10}
+      JARDEM_PUBLIC_APP_URL: ${JARDEM_PUBLIC_APP_URL:-http://localhost:8080/app/citizen/}
+    depends_on:
+      db: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    networks: [cluster]
+
+  gateway:
+    image: nginx:1.27-alpine
+    ports:
+      - "${JARDEM_PORT:-8080}:80"
+    volumes:
+      - ./infra/gateway/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./web/dist:/srv/web:ro
+      - ./mobile/citizen/build/web:/srv/citizen:ro
+      - ./mobile/responder/build/web:/srv/responder:ro
+    depends_on:
+      backend: {condition: service_healthy}
+    networks: [cluster]
+
+volumes:
+  db-data:
+
+networks:
+  cluster:
