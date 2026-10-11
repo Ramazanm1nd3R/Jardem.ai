@@ -1,0 +1,1 @@
+{"services":{"ambulance":{"active_incidents":5,"units":35,"units_free":30},"police":{"active_incidents":2,"units":40,"units_free":38},"fire":{"active_incidents":1,"units":37,"units_free":35},"rescue":{"active_incidents":2,"units":8,"units_free":6}},"active_incidents":10,"departments":44,"mean_arrival_s":239,"served":4,"traffic_index":2,"strategy":"jardem"}
