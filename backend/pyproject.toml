@@ -1,0 +1,49 @@
+[project]
+name = "jardem-backend"
+version = "0.1.0"
+description = "Jardem.ai — emergency dispatch engine: routing, traffic, resource assignment"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+    "asyncpg>=0.29",
+    "redis>=5.0",
+    "pyjwt>=2.8",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "pytest-asyncio>=0.23",
+    "pytest-cov>=5",
+    "httpx>=0.27",
+    "hypothesis>=6.100",
+    "scipy>=1.13",
+    "mutmut>=3.2",
+    "ruff>=0.5",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+markers = ["slow: uses the full Almaty graph"]
+
+[tool.ruff]
+line-length = 104
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["B008", "B905"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["B023", "E501", "C408", "E741"]
+"scripts/*" = ["SIM115", "E501"]
+"app/engine/seed.py" = ["E501"]
+
+[tool.mutmut]
+paths_to_mutate = ["app/domain/"]
+tests_dir = ["tests/domain/"]
+also_copy = ["app/"]

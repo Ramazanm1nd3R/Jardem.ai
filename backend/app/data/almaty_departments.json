@@ -1,0 +1,444 @@
+{
+ "departments": [
+  {
+   "id": "fire-1",
+   "service": "fire",
+   "name": "Пожарная часть №19",
+   "address": "",
+   "lat": 43.316624,
+   "lon": 76.832251,
+   "approximate": false,
+   "source": "way/1168291600"
+  },
+  {
+   "id": "fire-2",
+   "service": "fire",
+   "name": "Пожарная часть №5",
+   "address": "Қонаев көшесі, 132",
+   "lat": 43.247957,
+   "lon": 76.951755,
+   "approximate": false,
+   "source": "way/1454459858"
+  },
+  {
+   "id": "fire-3",
+   "service": "fire",
+   "name": "Специализированная пожарная часть №7",
+   "address": "Саина, 20А",
+   "lat": 43.237744,
+   "lon": 76.843532,
+   "approximate": false,
+   "source": "way/253333250"
+  },
+  {
+   "id": "fire-4",
+   "service": "fire",
+   "name": "Пожарная часть №4",
+   "address": "Дунентаева, 6А",
+   "lat": 43.356184,
+   "lon": 76.992481,
+   "approximate": false,
+   "source": "way/278443688"
+  },
+  {
+   "id": "fire-5",
+   "service": "fire",
+   "name": "Пожарный пост №17",
+   "address": "улица Даулеткерея, 1А",
+   "lat": 43.181064,
+   "lon": 76.8039,
+   "approximate": false,
+   "source": "way/301441656"
+  },
+  {
+   "id": "fire-6",
+   "service": "fire",
+   "name": "Пожарная часть №6",
+   "address": "Ермек Серкебаев даңғылы, 153",
+   "lat": 43.22148,
+   "lon": 76.896392,
+   "approximate": false,
+   "source": "way/30334130"
+  },
+  {
+   "id": "fire-7",
+   "service": "fire",
+   "name": "Специализированная пожарная часть №15",
+   "address": "улица Чуланова, 105",
+   "lat": 43.249473,
+   "lon": 76.826003,
+   "approximate": false,
+   "source": "way/392803787"
+  },
+  {
+   "id": "fire-8",
+   "service": "fire",
+   "name": "Пожарная часть №1",
+   "address": "Сарбайская, 129",
+   "lat": 43.288328,
+   "lon": 76.982943,
+   "approximate": false,
+   "source": "way/476884048"
+  },
+  {
+   "id": "fire-9",
+   "service": "fire",
+   "name": "Пожарная часть №12",
+   "address": "Кокмайса микрорайон, 27А",
+   "lat": 43.30521,
+   "lon": 76.897673,
+   "approximate": false,
+   "source": "way/476887266"
+  },
+  {
+   "id": "fire-10",
+   "service": "fire",
+   "name": "Специализированная пожарная часть №14",
+   "address": "улица Шаяхметова, 1",
+   "lat": 43.333527,
+   "lon": 76.90316,
+   "approximate": false,
+   "source": "way/476889371"
+  },
+  {
+   "id": "fire-11",
+   "service": "fire",
+   "name": "Пожарный пост №16",
+   "address": "Рыскулбекова, 43А",
+   "lat": 43.204467,
+   "lon": 76.866922,
+   "approximate": false,
+   "source": "way/476892422"
+  },
+  {
+   "id": "fire-12",
+   "service": "fire",
+   "name": "Пожарная часть №9",
+   "address": "Мұқағали Мақатаев көшесі, 129А",
+   "lat": 43.26282,
+   "lon": 76.921795,
+   "approximate": false,
+   "source": "way/50875672"
+  },
+  {
+   "id": "fire-13",
+   "service": "fire",
+   "name": "Пожарная часть №8",
+   "address": "Райымбек даңғылы, 172",
+   "lat": 43.268419,
+   "lon": 76.9234,
+   "approximate": false,
+   "source": "way/50875763"
+  },
+  {
+   "id": "fire-14",
+   "service": "fire",
+   "name": "Пожарная часть №5",
+   "address": "Карпатская улица, 16",
+   "lat": 43.25313,
+   "lon": 76.848938,
+   "approximate": false,
+   "source": "way/51969505"
+  },
+  {
+   "id": "fire-15",
+   "service": "fire",
+   "name": "Специализированная пожарная часть №11",
+   "address": "проспект Суюнбая, 247",
+   "lat": 43.321129,
+   "lon": 76.959048,
+   "approximate": false,
+   "source": "way/57017511"
+  },
+  {
+   "id": "police-1",
+   "service": "police",
+   "name": "Участковый пункт полиции",
+   "address": "",
+   "lat": 43.235426,
+   "lon": 76.957606,
+   "approximate": false,
+   "source": "node/4573973196"
+  },
+  {
+   "id": "police-2",
+   "service": "police",
+   "name": "Участковый пункт полиции №104 Наурызбайского района",
+   "address": "улица Килыбай Медеубекова, 1",
+   "lat": 43.175829,
+   "lon": 76.791854,
+   "approximate": false,
+   "source": "way/1015184577"
+  },
+  {
+   "id": "police-3",
+   "service": "police",
+   "name": "Участковый пункт полиции №94 Турксибского района",
+   "address": "Дунентаева",
+   "lat": 43.357191,
+   "lon": 76.988873,
+   "approximate": false,
+   "source": "node/4515746478"
+  },
+  {
+   "id": "police-4",
+   "service": "police",
+   "name": "Участковый пункт полиции №67",
+   "address": "мкр Дорожник",
+   "lat": 43.305468,
+   "lon": 76.898876,
+   "approximate": false,
+   "source": "node/3504768118"
+  },
+  {
+   "id": "police-5",
+   "service": "police",
+   "name": "Участковый пункт полиции №21 Алмалинского района",
+   "address": "",
+   "lat": 43.243493,
+   "lon": 76.875657,
+   "approximate": false,
+   "source": "node/13394415457"
+  },
+  {
+   "id": "police-6",
+   "service": "police",
+   "name": "Участковый пункт полиции №103 Наурызбайского района",
+   "address": "",
+   "lat": 43.209201,
+   "lon": 76.829353,
+   "approximate": false,
+   "source": "node/10567193967"
+  },
+  {
+   "id": "police-7",
+   "service": "police",
+   "name": "Участковый пункт полиции №24 Алмалинского района",
+   "address": "Абылай Хан даңғылы, 26",
+   "lat": 43.268695,
+   "lon": 76.940543,
+   "approximate": false,
+   "source": "node/12189375591"
+  },
+  {
+   "id": "police-8",
+   "service": "police",
+   "name": "Участковый пункт полиции №91 Турксибского района",
+   "address": "Сейфуллин даңғылы, 104",
+   "lat": 43.314026,
+   "lon": 76.939949,
+   "approximate": false,
+   "source": "node/11795325361"
+  },
+  {
+   "id": "police-9",
+   "service": "police",
+   "name": "Участковый пункт №50",
+   "address": "",
+   "lat": 43.217585,
+   "lon": 76.892898,
+   "approximate": false,
+   "source": "node/4915434622"
+  },
+  {
+   "id": "police-10",
+   "service": "police",
+   "name": "РУВД Алмалинского района",
+   "address": "",
+   "lat": 43.24453,
+   "lon": 76.911263,
+   "approximate": false,
+   "source": "node/1444321759"
+  },
+  {
+   "id": "police-11",
+   "service": "police",
+   "name": "Управление полиции Медеуского района",
+   "address": "Kabanbay Batyr Street, 93",
+   "lat": 43.249401,
+   "lon": 76.939111,
+   "approximate": false,
+   "source": "node/13982184401"
+  },
+  {
+   "id": "police-12",
+   "service": "police",
+   "name": "Участковый пункт полиции №3 Алатауского района",
+   "address": "",
+   "lat": 43.257499,
+   "lon": 76.861494,
+   "approximate": false,
+   "source": "node/715733035"
+  },
+  {
+   "id": "police-13",
+   "service": "police",
+   "name": "Участковый пункт полиции №76 Медеуского района",
+   "address": "Гоголь көшесі, 45",
+   "lat": 43.260888,
+   "lon": 76.955142,
+   "approximate": false,
+   "source": "way/238000301"
+  },
+  {
+   "id": "police-14",
+   "service": "police",
+   "name": "Участковый пункт полиции №54 УВД Бостандыкского района",
+   "address": "",
+   "lat": 43.230516,
+   "lon": 76.892866,
+   "approximate": false,
+   "source": "node/2511125229"
+  },
+  {
+   "id": "ambulance-1",
+   "service": "ambulance",
+   "name": "Подстанция №1",
+   "address": "микрорайон Керемет, 3к2",
+   "lat": 43.233825,
+   "lon": 76.937784,
+   "approximate": true,
+   "source": "node/5201586060"
+  },
+  {
+   "id": "ambulance-2",
+   "service": "ambulance",
+   "name": "Подстанция №2",
+   "address": "Индустриальная улица, 2 Б",
+   "lat": 43.319429,
+   "lon": 76.831765,
+   "approximate": true,
+   "source": "way/1168291599"
+  },
+  {
+   "id": "ambulance-3",
+   "service": "ambulance",
+   "name": "Подстанция №3",
+   "address": "улица Монтажная, 33",
+   "lat": 43.33642,
+   "lon": 76.982913,
+   "approximate": true,
+   "source": "way/188433409"
+  },
+  {
+   "id": "ambulance-4",
+   "service": "ambulance",
+   "name": "Подстанция №4",
+   "address": "пос. Тастыбулак, Жандосова, 1Е",
+   "lat": 43.179821,
+   "lon": 76.813743,
+   "approximate": true,
+   "source": "way/285937121"
+  },
+  {
+   "id": "ambulance-5",
+   "service": "ambulance",
+   "name": "Подстанция №5",
+   "address": "",
+   "lat": 43.176931,
+   "lon": 76.898112,
+   "approximate": true,
+   "source": "node/2583593417"
+  },
+  {
+   "id": "ambulance-6",
+   "service": "ambulance",
+   "name": "Подстанция №6",
+   "address": "",
+   "lat": 43.261333,
+   "lon": 76.806113,
+   "approximate": true,
+   "source": "way/1167706140"
+  },
+  {
+   "id": "ambulance-7",
+   "service": "ambulance",
+   "name": "Подстанция №7",
+   "address": "улица Демченко, 83",
+   "lat": 43.28285,
+   "lon": 76.990859,
+   "approximate": true,
+   "source": "way/285938423"
+  },
+  {
+   "id": "ambulance-8",
+   "service": "ambulance",
+   "name": "Подстанция №8",
+   "address": "",
+   "lat": 43.321143,
+   "lon": 76.913224,
+   "approximate": true,
+   "source": "node/4866071121"
+  },
+  {
+   "id": "ambulance-9",
+   "service": "ambulance",
+   "name": "Подстанция №9",
+   "address": "",
+   "lat": 43.220181,
+   "lon": 76.865571,
+   "approximate": true,
+   "source": "way/260869767"
+  },
+  {
+   "id": "ambulance-10",
+   "service": "ambulance",
+   "name": "Подстанция №10",
+   "address": "Гагарин даңғылы, 66Б",
+   "lat": 43.244975,
+   "lon": 76.894255,
+   "approximate": true,
+   "source": "node/6057275988"
+  },
+  {
+   "id": "ambulance-11",
+   "service": "ambulance",
+   "name": "Подстанция №11",
+   "address": "",
+   "lat": 43.22943,
+   "lon": 76.801692,
+   "approximate": true,
+   "source": "way/277666585"
+  },
+  {
+   "id": "ambulance-12",
+   "service": "ambulance",
+   "name": "Подстанция №12",
+   "address": "",
+   "lat": 43.266554,
+   "lon": 76.953454,
+   "approximate": true,
+   "source": "node/10968506409"
+  },
+  {
+   "id": "rescue-1",
+   "service": "rescue",
+   "name": "Служба спасения города Алматы",
+   "address": "",
+   "lat": 43.2567,
+   "lon": 76.9286,
+   "approximate": true,
+   "source": "approximate"
+  },
+  {
+   "id": "rescue-2",
+   "service": "rescue",
+   "name": "Горноспасательный пост «Медеу»",
+   "address": "",
+   "lat": 43.1935,
+   "lon": 77.0075,
+   "approximate": true,
+   "source": "approximate"
+  },
+  {
+   "id": "rescue-3",
+   "service": "rescue",
+   "name": "Поисково-спасательный отряд «Север»",
+   "address": "",
+   "lat": 43.318,
+   "lon": 76.932,
+   "approximate": true,
+   "source": "approximate"
+  }
+ ]
+}
