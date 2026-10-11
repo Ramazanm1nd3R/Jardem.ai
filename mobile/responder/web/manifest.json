@@ -1,0 +1,35 @@
+{
+    "name": "Jardem.ai — Экипаж",
+    "short_name": "Jardem Экипаж",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#F3F8FE",
+    "theme_color": "#F3F8FE",
+    "description": "Jardem.ai — приложение экипажа экстренных служб Алматы (демо)",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

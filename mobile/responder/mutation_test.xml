@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mutation testing of the pure decision logic in lib/logic.
+     Run from this directory:  dart pub global run mutation_test mutation_test.xml
+     (the built-in rule set is added automatically). -->
+<mutations version="1.2">
+  <directories>
+    <directory recursive="true">lib/logic
+      <matching pattern="\.dart$"/>
+    </directory>
+  </directories>
+  <commands>
+    <command group="test" expected-return="0" timeout="180">flutter test --no-pub test/logic</command>
+  </commands>
+  <!-- Extra rules on top of the built-in set: strict-comparison boundary
+       flips, boolean literals, rounding mode and emptiness checks. -->
+  <rules>
+    <literal text=" &lt; " id="jardem.lt">
+      <mutation text=" &lt;= "/>
+      <mutation text=" &gt; "/>
+    </literal>
+    <literal text=" &gt; " id="jardem.gt">
+      <mutation text=" &gt;= "/>
+      <mutation text=" &lt; "/>
+    </literal>
+    <regex pattern="\btrue\b" id="jardem.true">
+      <mutation text="false"/>
+    </regex>
+    <regex pattern="\bfalse\b" id="jardem.false">
+      <mutation text="true"/>
+    </regex>
+    <literal text=".round()" id="jardem.round">
+      <mutation text=".floor()"/>
+      <mutation text=".ceil()"/>
+    </literal>
+    <literal text=".isEmpty" id="jardem.isEmpty">
+      <mutation text=".isNotEmpty"/>
+    </literal>
+    <literal text=".isNotEmpty" id="jardem.isNotEmpty">
+      <mutation text=".isEmpty"/>
+    </literal>
+    <regex pattern="([\s\(])([0-9]+)([;,\)\s])" id="jardem.int.plus1">
+      <mutation text="$1($2 + 1)$3"/>
+    </regex>
+  </rules>
+  <threshold failure="90">
+    <rating over="100" name="A"/>
+    <rating over="95" name="B"/>
+    <rating over="90" name="C"/>
+  </threshold>
+</mutations>
