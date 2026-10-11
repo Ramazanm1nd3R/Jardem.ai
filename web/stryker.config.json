@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "_comment": "The vitest runner plugin does not activate mutants under Vitest 5, so mutants are run through the plain command runner.",
+  "testRunner": "command",
+  "commandRunner": { "command": "npx vitest run src/lib" },
+  "mutate": ["src/lib/**/*.ts", "!src/lib/**/*.test.ts"],
+  "reporters": ["clear-text", "progress"],
+  "concurrency": 8,
+  "tempDirName": ".stryker-tmp",
+  "thresholds": { "high": 90, "low": 80, "break": 80 }
+}
